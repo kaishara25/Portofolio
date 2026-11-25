@@ -622,23 +622,39 @@ h1 {
     font-size: 0.78rem;
   }
   .container {
-    margin: 20px auto;
+    margin: 18px auto;
     padding: 0 14px;
-    gap: 30px;
+    gap: 28px;
   }
   .window-body {
     padding: 16px;
   }
   .hero-grid, .projects-split, .creative-layout {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .hero-intro, .side-panel, .project-list, .event-box, .astrada-card, .gallery-wrapper {
+    min-width: 0;
+    width: 100%;
   }
   h1 {
-    font-size: 1.8rem;
+    font-size: 1.75rem;
+    word-break: break-word;
+  }
+  .section-header h2 {
+    font-size: 1.25rem;
   }
   .gallery-item {
-    flex: 0 0 180px;
+    flex: 0 0 170px;
   }
   .gallery-item img {
-    height: 210px;
+    height: 200px;
+  }
+  .contact-buttons {
+    width: 100%;
+    flex-direction: column;
+  }
+  .contact-buttons a {
+    width: 100%;
+    text-align: center;
   }
 }
